@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Egg news</a>
+
+                <div class="navbar navbar-dark bg-primary" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Administrador</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <form action="/noticia/cargar" method="POST">
+
+            <div class="container">
+                <label for="floatingTextarea">Titulo noticia</label>
+                <input class="form-control form-control-lg" type="text" name="titulo" placeholder="Cargar titulo" aria-label=".form-control-lg example">
+            </div>
+            <div class="container">
+                <label for="floatingTextarea">Resumen</label>
+                <input class="form-control form-control-lg" type="text" name="resumen" placeholder="Cargar resumen" style="width:1300px;height:100px" aria-label=".form-control-lg example">
+            </div>
+            <div class="container">
+                <label for="floatingTextarea2">Noticia</label>
+                <input class="form-control form-control-lg" type="text" name="parrafo" placeholder="Cargar noticia"  style="width:1300px;height:400px" aria-label=".form-control-lg example">
+            </div>
+            <br>
+            <br>
+            <!-- <button type="button" class="btn btn-primary btn-lg" >Cargar Noticia</button> -->
+            <div class="container">
+                <button class="btn btn-primary" type="submit">Cargar Noticia</button>
+            </div>
+        </form>
+    </body>
+
+</html>
